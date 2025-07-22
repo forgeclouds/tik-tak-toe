@@ -18,14 +18,16 @@ html {
 }
 
 body {
-  background: radial-gradient(
-      circle at top,
+  background:
+    radial-gradient(circle at top,
       rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
-    ),
+      rgba(250, 176, 103, 0.87)),
     url('bg-pattern-dark.png');
   background-repeat: repeat;
-  background-size: 100% 100%, 30% 30%, 100% 100%;
+  background-size:
+    100% 100%,
+    30% 30%,
+    100% 100%;
   min-height: 110rem;
 }
 
@@ -228,7 +230,9 @@ ol {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s, color 0.2s;
+  transition:
+    all 0.2s,
+    color 0.2s;
   box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
 }
 
@@ -290,6 +294,7 @@ ol {
     opacity: 0;
     transform: translateX(-30%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -300,9 +305,11 @@ ol {
   0% {
     color: #e1dec7;
   }
+
   50% {
     color: #9f9d83;
   }
+
   100% {
     color: #e1dec7;
   }
@@ -312,9 +319,11 @@ ol {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -325,10 +334,12 @@ ol {
     border-color: #f6e35a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
   }
+
   50% {
     border-color: #f8c031;
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
+
   100% {
     border-color: #f6e35a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
@@ -341,10 +352,12 @@ ol {
     transform: scale(0);
     opacity: 0;
   }
+
   80% {
     transform: scale(1.1);
     opacity: 1;
   }
+
   100% {
     transform: scale(1);
   }

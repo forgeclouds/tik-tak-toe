@@ -5,7 +5,7 @@ export type Players = Record<PlayerId, string>;
 export type GameBoardState = PlayerSymbol[][];
 
 export type Turn = {
-  square: { row: number; col: number};
+  square: { row: number; col: number };
   player: PlayerSymbol;
 };
 

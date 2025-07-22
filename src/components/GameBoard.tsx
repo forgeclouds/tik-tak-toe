@@ -1,13 +1,16 @@
-import type {  GameBoardState, SelectSquareHandler } from '../types/types.ts';
+import type { GameBoardState, SelectSquareHandler } from '../types/types.ts';
 
 type GameBoardProps = {
   gameBoard: GameBoardState;
   onSelectSquare: SelectSquareHandler;
 };
 
-export default function GameBoard({ onSelectSquare, gameBoard }: GameBoardProps) {
+export default function GameBoard({
+  onSelectSquare,
+  gameBoard,
+}: GameBoardProps) {
   return (
-    <ol id='game-board'>
+    <ol id="game-board">
       {gameBoard.map((row, rowIndex) => (
         <li key={rowIndex}>
           <ol>
@@ -25,5 +28,5 @@ export default function GameBoard({ onSelectSquare, gameBoard }: GameBoardProps)
         </li>
       ))}
     </ol>
-  )
+  );
 }

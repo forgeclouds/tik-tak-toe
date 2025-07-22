@@ -1,4 +1,4 @@
-import type {  Turn } from '../types/types.ts';
+import type { Turn } from '../types/types.ts';
 
 type LogProps = {
   turns: Turn[];
@@ -7,11 +7,11 @@ type LogProps = {
 export default function Log({ turns }: LogProps) {
   return (
     <ol id="log">
-      {turns.map(turn => (
+      {turns.map((turn) => (
         <li key={`${turn.square.row}${turn.square.col}`}>
           {turn.player} selected {turn.square.row}, {turn.square.col}
         </li>
       ))}
     </ol>
-  )
+  );
 }
